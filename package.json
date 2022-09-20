@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "heroku-postbuild": "/frontEnd/index.html"
+    "heroku-postbuild": "./frontEnd/index.html"
   },
   "keywords": [],
   "author": "",
