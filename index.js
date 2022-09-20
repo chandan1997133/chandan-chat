@@ -8,7 +8,7 @@ const io = require('socket.io')(server, {
     }
 });
 
-app.use(express.static("/frontEnd/*"));
+app.use(express.static("/*"));
 server.listen(5000);
 
 //it is store users list
