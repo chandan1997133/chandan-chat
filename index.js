@@ -7,6 +7,8 @@ const io = require('socket.io')(server, {
         origin: '*',
     }
 });
+
+app.use(express.static("/frontEnd/*"));
 server.listen(5000);
 
 //it is store users list
@@ -28,6 +30,9 @@ io.on('connection', socket => {
         socket.broadcast.emit('status', { message: message, name: users[socket.id] });
     });
 
+ 
+       
+    
     /*if any user disconnect from the chat it will
       breadcast that the particual user disconnected from the chat and delet from the userslist*/
     socket.on('disconnect', message => {
