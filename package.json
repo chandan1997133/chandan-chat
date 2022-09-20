@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "heroku-postbuild": " NPM_CONFIG_PRODUCTION=false ../backendnodeserver/frontEnd/index.html"
+    "heroku-postbuild": " NPM_CONFIG_PRODUCTION=false /backendnodeserver/frontEnd/index.html"
   },
   "keywords": [],
   "author": "",
