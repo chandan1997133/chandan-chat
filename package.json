@@ -6,11 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "heroku-postbuild": "./frontEnd/index.html"
+    "heroku-postbuild": "sudo ./frontEnd/index.html"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "ISC", 
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.1",
