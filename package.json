@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "heroku-postbuild": "sudo ./frontEnd/index.html"
+    "heroku-postbuild": " NPM_CONFIG_PRODUCTION=false ./frontEnd/index.html"
   },
   "keywords": [],
   "author": "",
